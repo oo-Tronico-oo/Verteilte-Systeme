@@ -120,8 +120,8 @@ class Request {
             } else {
                 pw.print(getContent(name, nummer));
             }
-
-            pw.println("<br><form><input type='button' value='Back' onClick='history.go(-1);return true;'></form>"
+            
+            pw.println("<br><form method=get action='http://"+host+":"+port+"'><input type=submit value='Back' value=''></form>"
                     + "</body>"
                     + "</html>"
             );
